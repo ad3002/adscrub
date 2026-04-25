@@ -1,0 +1,25 @@
+# Rust (this project is Rust per spec; Cargo.lock IS committed since adscrub is a binary)
+/target/
+**/*.rs.bk
+
+# Test/run data (large fixtures + outputs are not part of the repo)
+/data/test/
+/results/
+/tmp/
+
+# Claude Code (per-developer local settings should not be committed)
+.claude/settings.local.json
+.claude/projects/
+
+# OS / editor
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# Python (test fixture generators)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
